@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
 
-namespace WarIO
+namespace WarIO.Movement
 {
     public class CharacterMovementController : MonoBehaviour
     {

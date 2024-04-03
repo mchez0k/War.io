@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace WarIO
+namespace WarIO.Movement
 {
     internal interface IMovementDirectionSource
     {
