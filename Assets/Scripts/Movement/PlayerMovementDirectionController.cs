@@ -4,7 +4,7 @@ namespace WarIO.Movement
 {
     public class PlayerMovementDirectionController : MonoBehaviour, IMovementDirectionSource
     {
-        private UnityEngine.Camera camera;
+        private new UnityEngine.Camera camera;
         public Vector3 movementDirection { get; private set; }
 
         protected void Awake()
