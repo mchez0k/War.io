@@ -22,9 +22,12 @@ namespace Assets.Scripts.Camera
 
         protected void LateUpdate()
         {
-            Vector3 targetRotation = rotationOffset - followCameraOffset;
-            transform.position = player.transform.position + followCameraOffset;
-            transform.rotation = Quaternion.LookRotation(targetRotation, Vector3.up);
+            if (player != null)
+            {
+                Vector3 targetRotation = rotationOffset - followCameraOffset;
+                transform.position = player.transform.position + followCameraOffset;
+                transform.rotation = Quaternion.LookRotation(targetRotation, Vector3.up);
+            }
         }
     }
 }

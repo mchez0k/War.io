@@ -1,11 +1,12 @@
 using UnityEngine;
 using WarIO.Movement;
+using WarIO.Pickup;
 using WarIO.Shooting;
 
 namespace WarIO
 {
     [RequireComponent(typeof(CharacterMovementController), typeof(ShootingController))]
-    public class BaseCharacter : MonoBehaviour
+    public abstract class BaseCharacter : MonoBehaviour
     {
         [SerializeField]
         private Weapon baseWeaponPrefab;
@@ -29,7 +30,7 @@ namespace WarIO
 
         private void Start()
         {
-            shootingController.SetWeapon(baseWeaponPrefab, hand);
+            SetWeapon(baseWeaponPrefab);
         }
 
         // Update is called once per frame
@@ -57,6 +58,18 @@ namespace WarIO
 
                 Destroy(other.gameObject);
             }
+            else if (LayerUtils.isPickUp(other.gameObject))
+            {
+                var pickUp = other.gameObject.GetComponent<PickUpWeapon>();
+                pickUp.PickUp(this);
+
+                Destroy(other.gameObject);
+            }
+        }
+
+        public void SetWeapon(Weapon weapon)
+        {
+            shootingController.SetWeapon(weapon, hand);
         }
     }
 
