@@ -20,7 +20,6 @@ namespace WarIO.Movement
             var direction = new Vector3(horizontal, 0, vertical);
             direction = camera.transform.rotation * direction;
             direction.y = 0;
-
             movementDirection = direction.normalized;
         }
     }

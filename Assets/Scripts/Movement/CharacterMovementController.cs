@@ -8,6 +8,9 @@ namespace WarIO.Movement
         [SerializeField]
         private float speed = 4f;
         [SerializeField]
+        private float runSpeedRatio = 2f;
+
+        [SerializeField]
         private float maxRadiansDelta = 10f;
         public Vector3 movementDirection { get; set; }
         public Vector3 lookDirection { get; set; }
@@ -32,7 +35,7 @@ namespace WarIO.Movement
 
         private void Translate()
         {
-            var delta = movementDirection * speed * Time.deltaTime;
+            var delta = movementDirection * speed * (Input.GetKey(KeyCode.Space) ? runSpeedRatio : 1) * Time.deltaTime; // Реализация бега
             characterController.Move(delta);
         }
 

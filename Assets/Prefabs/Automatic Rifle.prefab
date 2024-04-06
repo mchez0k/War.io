@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &825065363394450646
+--- !u!1 &2903012965422230259
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6616476838188679996}
+  - component: {fileID: 112426005376965515}
   m_Layer: 0
   m_Name: Muzzle
   m_TagString: Untagged
@@ -16,22 +16,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6616476838188679996
+--- !u!4 &112426005376965515
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825065363394450646}
+  m_GameObject: {fileID: 2903012965422230259}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6160716479107485862}
+  m_Father: {fileID: 665259842274118798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5185926819112254868
+--- !u!1 &3448420745695955372
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,10 +39,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1413189489315333999}
-  - component: {fileID: 7020110035233277574}
-  - component: {fileID: 8112285178826317473}
-  - component: {fileID: 3671070523256503262}
+  - component: {fileID: 3655621248706618989}
+  - component: {fileID: 4587654199679870848}
+  - component: {fileID: 5038674827337730705}
+  - component: {fileID: 6742803964301360942}
   m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
@@ -50,36 +50,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1413189489315333999
+--- !u!4 &3655621248706618989
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5185926819112254868}
+  m_GameObject: {fileID: 3448420745695955372}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.2, y: 0.4, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6160716479107485862}
+  m_Father: {fileID: 665259842274118798}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!33 &7020110035233277574
+--- !u!33 &4587654199679870848
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5185926819112254868}
+  m_GameObject: {fileID: 3448420745695955372}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8112285178826317473
+--- !u!23 &5038674827337730705
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5185926819112254868}
+  m_GameObject: {fileID: 3448420745695955372}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -93,7 +93,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 3e50980e851f8ce4d80540b86be0a8cf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,13 +115,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3671070523256503262
+--- !u!136 &6742803964301360942
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5185926819112254868}
+  m_GameObject: {fileID: 3448420745695955372}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -138,7 +138,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!1 &5577495301210626349
+--- !u!1 &4505108159809413539
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,39 +146,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6160716479107485862}
-  - component: {fileID: 1890900964113796118}
+  - component: {fileID: 665259842274118798}
+  - component: {fileID: 5937429933178528902}
   m_Layer: 0
-  m_Name: Pistol
+  m_Name: Automatic Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6160716479107485862
+--- !u!4 &665259842274118798
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5577495301210626349}
+  m_GameObject: {fileID: 4505108159809413539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1413189489315333999}
-  - {fileID: 6616476838188679996}
+  - {fileID: 3655621248706618989}
+  - {fileID: 112426005376965515}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1890900964113796118
+--- !u!114 &5937429933178528902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5577495301210626349}
+  m_GameObject: {fileID: 4505108159809413539}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29069773fec929144bc3702e882cb5ec, type: 3}
@@ -186,9 +186,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <BulletPrefab>k__BackingField: {fileID: -2670565558121498501, guid: 1faec4b5b49b6944383d41cf375db609,
     type: 3}
-  <shootRadius>k__BackingField: 5
-  <shootRateSec>k__BackingField: 1
-  damage: 2
+  <shootRadius>k__BackingField: 7
+  <shootRateSec>k__BackingField: 0.5
+  damage: 1
   bulletMaxFlyDistance: 10
   bulletFlySpeed: 10
-  bulletSpawnPosition: {fileID: 6616476838188679996}
+  bulletSpawnPosition: {fileID: 112426005376965515}
