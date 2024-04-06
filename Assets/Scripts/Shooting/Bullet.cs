@@ -9,12 +9,14 @@ namespace WarIO.Shooting
         private float flySpeed;
         private float maxFlyDistance;
         private float currentFlyDistance;
+        public float damage { get; private set; }
 
-        public void Initialize(Vector3 direction, float maxFlyDistance, float flySpeed)
+        public void Initialize(Vector3 direction, float maxFlyDistance, float flySpeed, float damage)
         {
             this.direction = direction;
             this.flySpeed = flySpeed;
             this.maxFlyDistance = maxFlyDistance;
+            this.damage = damage;
         }
 
         protected void Update()

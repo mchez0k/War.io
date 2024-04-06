@@ -7,9 +7,12 @@ namespace WarIO.Shooting
         [field: SerializeField]
         public Bullet BulletPrefab { get; private set; }
         [field: SerializeField]
-        public float shootRadius { get; private set; } = 5f;
+        public float shootRadius { get; private set; } = 4f;
         [field: SerializeField]
         public float shootRateSec { get; private set; } = 1f;
+
+        [SerializeField]
+        private float damage = 1f;
 
         [SerializeField]
         private float bulletMaxFlyDistance = 10f;
@@ -26,7 +29,7 @@ namespace WarIO.Shooting
             target.y = 0;
             target.Normalize();
 
-            bullet.Initialize(target, bulletMaxFlyDistance, bulletFlySpeed);
+            bullet.Initialize(target, bulletMaxFlyDistance, bulletFlySpeed, damage);
         }
     }
 }

@@ -21,7 +21,7 @@ namespace WarIO.Movement
             direction = camera.transform.rotation * direction;
             direction.y = 0;
 
-            movementDirection = direction;
+            movementDirection = direction.normalized;
         }
     }
 }
