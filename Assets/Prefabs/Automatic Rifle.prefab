@@ -165,6 +165,6 @@ MonoBehaviour:
   <shootRadius>k__BackingField: 7
   <shootRateSec>k__BackingField: 0.5
   damage: 1
-  bulletMaxFlyDistance: 10
-  bulletFlySpeed: 10
+  bulletMaxFlyDistance: 12
+  bulletFlySpeed: 12
   bulletSpawnPosition: {fileID: 112426005376965515}

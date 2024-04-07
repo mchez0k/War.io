@@ -1,3 +1,4 @@
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using WarIO.Movement;
 using WarIO.Pickup;
@@ -33,7 +34,6 @@ namespace WarIO
             SetWeapon(baseWeaponPrefab);
         }
 
-        // Update is called once per frame
         protected void Update()
         {
             var direction = movementDirectionSource.movementDirection;

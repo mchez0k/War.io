@@ -16,7 +16,9 @@ namespace WarIO.Pickup
         private int maxCount = 2;
 
         [SerializeField]
-        private float spawnIntervalSec = 10f;
+        private float minSpawnIntervalSec = 10f;
+        [SerializeField]
+        private float maxSpawnIntervalSec = 20f;
 
         private float currentSpawnTime;
         private int currentCount = 0;
@@ -26,7 +28,7 @@ namespace WarIO.Pickup
             if (currentCount < maxCount)
             {
                 currentSpawnTime += Time.deltaTime;
-                if (currentSpawnTime > spawnIntervalSec)
+                if (currentSpawnTime > Random.Range(minSpawnIntervalSec, maxSpawnIntervalSec))
                 {
                     currentSpawnTime = 0f;
                     currentCount++;
