@@ -6,6 +6,8 @@ namespace WarIO.Movement
     {
         private new UnityEngine.Camera camera;
         public Vector3 movementDirection { get; private set; }
+        [SerializeField]
+        private float runSpeedRatio = 2f;
 
         protected void Awake()
         {
@@ -20,7 +22,7 @@ namespace WarIO.Movement
             var direction = new Vector3(horizontal, 0, vertical);
             direction = camera.transform.rotation * direction;
             direction.y = 0;
-            movementDirection = direction.normalized;
+            movementDirection = direction.normalized * (Input.GetKey(KeyCode.Space) ? runSpeedRatio : 1);
         }
     }
 }

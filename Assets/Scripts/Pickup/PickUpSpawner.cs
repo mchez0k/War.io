@@ -28,7 +28,7 @@ namespace WarIO.Pickup
             if (currentCount < maxCount)
             {
                 currentSpawnTime += Time.deltaTime;
-                if (currentSpawnTime > Random.Range(minSpawnIntervalSec, maxSpawnIntervalSec))
+                if (currentSpawnTime > Random.Range(minSpawnIntervalSec, maxSpawnIntervalSec)) // Вызывается каждый кадр, но величина всё равно остаётся случайной
                 {
                     currentSpawnTime = 0f;
                     currentCount++;

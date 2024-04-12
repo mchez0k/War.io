@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.Rendering;
+using UnityEngine;
 
 namespace WarIO.Movement
 {
@@ -7,8 +8,6 @@ namespace WarIO.Movement
         private static readonly float _sqrEpsilon = Mathf.Epsilon * Mathf.Epsilon;
         [SerializeField]
         private float speed = 4f;
-        [SerializeField]
-        private float runSpeedRatio = 2f;
 
         [SerializeField]
         private float maxRadiansDelta = 10f;
@@ -35,7 +34,7 @@ namespace WarIO.Movement
 
         private void Translate()
         {
-            var delta = movementDirection * speed * (Input.GetKey(KeyCode.Space) ? runSpeedRatio : 1) * Time.deltaTime; // Реализация бега
+            var delta = movementDirection * speed * Time.deltaTime;
             characterController.Move(delta);
         }
 

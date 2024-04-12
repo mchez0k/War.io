@@ -47,7 +47,7 @@ namespace WarIO.Shooting
             var mask = LayerUtils.EnemyMask;
 
             var size = Physics.OverlapSphereNonAlloc(position, radius, colliders, mask);
-            if (size > 0)
+            if (size > 1)
             {
                 for (int i = 0; i < size; i++)
                 {
