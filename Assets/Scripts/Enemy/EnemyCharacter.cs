@@ -1,11 +1,9 @@
-using Assets.Scripts.Movement;
 using UnityEngine;
-using WarIO.Movement;
-using WarIO.Shooting;
+using WarIO.Enemy;
 
 namespace WarIO
 {
-    [RequireComponent(typeof(DummyDirectionController))]
+    [RequireComponent(typeof(EnemyDirectionController), typeof(EnemyAIController))]
     public class EnemyCharacter : BaseCharacter
     {
 
